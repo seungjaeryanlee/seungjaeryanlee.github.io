@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <title>Seungjae Ryan Lee</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- jQuery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="common.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet">
+  <link href="fonts.css" rel="stylesheet">
+  <link href="colors.css" rel="stylesheet">
+  <link href="transition.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118584178-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118584178-1');
+  </script>
+</head>
+<body>
+  <div id="intro">
+    <h2 id="hello">Hello!</h2>
+    <h2 id="headline">I'm <b>Seungjae Ryan Lee</b>. I am a machine learning student researcher.</h2>
+    <h3>Get in touch: <a href="mailto:seungjaeryanlee@gmail.com">seungjaeryanlee@gmail.com</a></h3>
+  </div>
+  <div class="container">
+    <div id="section-about" class="section">
+      <h4 class="section-title">About</h4>
+      <div id="bio">
+        <p>
+          I am a <b>Mathematics</b> major at Princeton University, expected to graduate on May 2021.
+        </p>
+        <p>
+          I have been excited about Artificial Intelligence since middle school. My first project was a chess engine written in C++. Now, I use <b>PyTorch</b> to reimplement papers and conduct research. My main interests are <b>Generative Adversarial Networks (GAN)</b> and <b>Reinforcement Learning</b>.
+        </p>
+        <p>
+          When I am not working, I enjoy playing Table Tennis and Badminton.
+        </p>
+      </div>
+      <a class="view-resume" href="/resume.pdf">View my Resume<i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div id="section-experience" class="section">
+      <h4 class="section-title">Experience</h4>
+      <div class="experience-list">
+        <div class="experience">
+          <div class="experience-header">
+            <h5 class="experience-company left">Korea Artificial Intelligence and Robotics Lab</h5>
+            <p class="experience-duration right">January 2019 - Present</p>
+          </div>
+          <div class="clearfix"></div>
+          <p class="experience-title">Reinforcement Learning Researcher</p>
+        </div>
+        <div class="experience">
+          <div class="experience-header">
+            <h5 class="experience-company left">Modu Labs</h5>
+            <p class="experience-duration right">January - March 2019</p>
+          </div>
+          <div class="clearfix"></div>
+          <p class="experience-title">Deep Reinforcement Learning Seminar Instructor</p>
+        </div>
+        <div class="experience">
+          <div class="experience-header">
+            <h5 class="experience-company left">Scratchwork LLC</h5>
+            <p class="experience-duration right">June 2017 - September 2018</p>
+          </div>
+          <div class="clearfix"></div>
+          <p class="experience-title">Co-founder, Senior Developer</p>
+        </div>
+      </div>
+    </div>
+    <div id="section-projects" class="section">
+      <h4 class="section-title">Projects</h4>
+      <div class="projects-list">
+        <div class="project row">
+          <div class="project-img col-3">
+            <img id="clarity-img" src="images/clarity.png">
+          </div>
+          <div class="project-text col-9">
+            <div class="project-header">
+              <h5 class="project-name">Clarity</h5>
+            </div>
+            <div class="project-description">
+              A chess engine that can play a full game of chess against humans or other chess engines. Followed the Universal Chess Interface (UCI) Protocol to connect to popular GUIs such as Arena.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Sphinx</span>
+              <span class="project-tag">Pytest</span>
+            </div>
+          </div>
+        </div>
+        <div class="project row">
+          <div class="project-img col-3">
+            <img id="foodmap-img" src="images/foodmap.svg">
+          </div>
+          <div class="project-text col-9">
+            <div class="project-header">
+              <h5 class="project-name">FoodMap</h5>
+            </div>
+            <div class="project-description">
+              A web app that maps available free food events in campus. Group project for COS 333: Advanced Programming Techniques.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">NodeJS</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Heroku</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="credit" class="left"><b>Created by Seungjae Ryan Lee</b></p>
+      <ul class="links right">
+        <li class="link"><a href="mailto:seungjaeryanlee@gmail.com">Email</a></li>
+        <li class="link"><a href="https://www.github.com/seungjaeryanlee">GitHub</a></li>
+        <li class="link"><a href="https://www.linkedin.com/in/seungjaeryanlee">LinkedIn</a></li>
+<!--        <li class="link"><a href="https://www.kaggle.com/seungjaeryanlee">Kaggle</a></li>-->
+        <li class="link"><a href="https://www.endtoend.ai">Blog</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</body>
+</html>

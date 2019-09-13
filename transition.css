@@ -1,0 +1,15 @@
+/* Move arrow to right on link hover */
+.fa-arrow-right {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
+.view-resume:hover .fa-arrow-right {
+  transform: translate(1em, 0);
+  -webkit-transform: translate(1em, 0);
+  -moz-transform: translate(1em, 0);
+  -o-transform: translate(1em, 0);
+  -ms-transform: translate(1em, 0);
+}
