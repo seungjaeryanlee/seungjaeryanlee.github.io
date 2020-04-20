@@ -239,11 +239,12 @@
 
   <section class="section">
     <div class="container">
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Projects and Contributions</h1>
       <hr />
       <style>
         .custom-tile {
           background: white !important;
+          cursor: pointer;
         }
         .custom-tile:hover {
           background: rgba(0, 0, 0, 1) !important;
@@ -264,44 +265,99 @@
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
-            <div class="tile is-parent custom-tile-container">
-              <div class="tile is-child modal-trigger custom-tile card" data-target="project-1-modal">
+            <div class="tile is-parent">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/optuna/optuna'">
                 <div class="card-content">
                     <div class="media">
                       <div class="media-left">
                         <figure class="image is-48x48">
-                          <img src="img/scratchwork.ico" alt="Scratchwork Logo">
+                          <img src="img/optuna.jpg" alt="Optuna Logo">
                         </figure>
                       </div>
                       <div class="media-content">
-                        <p class="title is-4">Project Name</p>
-                        <p class="subtitle is-6">One Line</p>
+                        <p class="title is-4">optuna/optuna</p>
+                        <p class="subtitle is-6">A hyperparameter optimization framework</p>
                       </div>
                     </div>
                   <div class="tags is-6">
-                    <span class="tag">Technology 1</span>
-                    <span class="tag">Technology 2</span>
+                    <span class="tag">python</span>
+                    <span class="tag">machine-learning</span>
+                    <!-- <span class="tag">parellel</span> -->
+                    <!-- <span class="tag">distributed</span> -->
+                    <span class="tag">hyperparameter-optimization</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tile is-parent">
-              <div class="tile is-child modal-trigger custom-tile card" style="background-image: url(img/rl-weekly.png);"  data-target="project-2-modal">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/kairproject/kair_algorithms_draft'">
                 <div class="card-content">
                     <div class="media">
-                      <!-- <div class="media-left">
+                      <div class="media-left">
                         <figure class="image is-48x48">
-                          <img src="img/scratchwork.ico" alt="Scratchwork Logo">
+                          <img src="img/kair.png" alt="KAIR Logo" style="position: relative; top: 50%; transform: translateY(-50%);">
                         </figure>
-                      </div> -->
+                      </div>
                       <div class="media-content">
-                        <p class="title is-4">Project Name</p>
-                        <p class="subtitle is-6">One Line</p>
+                        <p class="title is-4">kairproject/kair_algorithms</p>
+                        <p class="subtitle is-6">Reinforcement learning for robot control</p>
                       </div>
                     </div>
                   <div class="tags is-6">
-                    <span class="tag">Technology 1</span>
-                    <span class="tag">Technology 2</span>
+                    <span class="tag">python</span>
+                    <span class="tag">reinforcement-learning</span>
+                    <span class="tag">robotics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/osim-rl-helper'">
+                <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="img/me.jpg" alt="My Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">osim-rl-helper</p>
+                        <p class="subtitle is-6">Helper for NIPS 2018: AI for Prosthetics Challenge</p>
+                      </div>
+                    </div>
+                  <div class="tags is-6">
+                    <span class="tag">python</span>
+                    <span class="tag">machine-learning</span>
+                    <span class="tag">reinforcement-learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/rldb'">
+                <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="img/me.jpg" alt="My Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">rldb</p>
+                        <p class="subtitle is-6">Performances of Reinforcement Learning Agents</p>
+                      </div>
+                    </div>
+                  <div class="tags is-6">
+                    <span class="tag">python</span>
+                    <span class="tag">reinforcement-learning</span>
+                    <span class="tag">state-of-the-art</span>
+                    <span class="tag">database</span>
                   </div>
                 </div>
               </div>
@@ -573,7 +629,7 @@
   </section>
 
   <!-- Modals -->
-  <div id="project-1-modal" class="modal">
+  <!-- <div id="project-1-modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
@@ -609,45 +665,7 @@
         <button class="button is-success">Close</button>
       </footer>
     </div>
-  </div>
-
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
+  </div> -->
 
   <footer class="footer">
     <div class="content has-text-centered">
