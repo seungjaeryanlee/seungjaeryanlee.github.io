@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
   <style>
+  section {
+    background: white;
+    font-size: 10pt;
+  }
+  a {
+    color: darkorange;
+  }
   .image.centered-image img {
     display: block;
     width: auto;
@@ -95,12 +102,46 @@
       <h1 class="title">About Me</h1>
       <hr />
       <p>
-        I am a junior undergraduate student at Princeton University interested in math research, software development, and machine learning.
+        I am a math major at Princeton University with minors in computer science and machine learning.
         I believe in learning by doing, and I always welcome new, exciting challenges that will help me grow.
         Each summer, I explored different interests, from conducting math research, founding a startup, and interning as a software engineer or a machine learning engineer.
         I also developed multiple personal projects and contributed to several open-source projects, 
         I spend my free time teaching or translating, because I believe that sharing knowledge will make the world a better place.
-        </p>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Publication</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content"><div class="media">
+            <div class="media-left">
+              <figure class="image centered-image is-48x48">
+                <img src="img/markoff.png" alt="Princeton Logo">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Experiments with the Markoff Surface</p>
+              <p class="subtitle is-6">
+                Published on January 2020 in <i>Experimental Mathematics</i>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Analyzed graph structures and spectral patterns of Markoff graphs with four million vertices and six million edges</li>
+              <li>Proved a deterministic formula for the number of orbits of any Markoff graph in a prime field</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -128,7 +169,8 @@
           <div class="content">
             <ul>
               <li>Minors in Computer Science and Machine Learning</li>
-              <li><b>Relevant Coursework</b>: Algorithms and Data Structures, Advanced Programming Techniques, Intro to Programming Systems, Computer Vision, Junior Seminar on Mathematics for Data Science, Probability and Stochastic Systems, Fundamentals of Statistics, Combinatorics</li>
+              <li><b>Relevant Coursework</b>: Algorithms, Probability, Statistics, Computer Vision, Seminar on Math for Data Science, Graph Theory,
+                Intro to Computer Systems, Advanced Programming Techniques, Combinatorics, Topology, Complex Analysis, Abstract Algebra</li>
             </ul>
           </div>
         </div>
@@ -141,6 +183,43 @@
       <h1 class="title">Experience</h1>
       <hr />
       <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/bloomberglp.jpg" alt="Bloomberg Logo">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Bloomberg L.P.</p>
+              <p class="subtitle is-6">Software Engineer Intern
+                -
+                <time datetime="2018-1">June 2020</time>
+                -
+                <time datetime="2019-9">August 2020</time>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              I interned in the Data Technologies Automation Engine team and
+              used unsupervised learning and weakly supervised learning to
+              improve performance without using labelled data.
+            </p>
+            <ul>
+              <li>Trained a word2vec word embedding model using Bloomberg's financial data</li>
+              <li>Reduced the size of the embedding by 97% and increased inference speed by 5 times while maintaining performance</li>
+              <li>Used weakly supervised learning to train a generative model for multi-entity relation extraction</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Gensim</span>
+              <span class="tag">Snorkel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
@@ -165,7 +244,6 @@
             </p>
             <ul>
               <li>Ranked #6 in <a href="https://sites.google.com/dstc.community/dstc8/home">DSTC8: End-to-End Multi-domain Task Completion</a> hosted by Microsoft Research</li>
-              <li>Modified and trained <a href="https://github.com/snakeztc/NeuralDialog-LaRL">LiteAttnCat</a>, a state-of-the-art word-level reinforcement learning algorithm</li>
               <li>Developed a data visualization interface for the MultiWoZ 2.1 task-oriented dialog dataset</li>
             </ul>
             <div class="tags">
@@ -193,20 +271,29 @@
                 <time datetime="2018-1">May 2019</time>
                 -
                 <time datetime="2019-9">August 2019</time>
+                ,
+                <time datetime="2018-1">June 2020</time>
+                -
+                <time datetime="2019-9">August 2020</time>
               </p>
             </div>
           </div>
           <div class="content">
-            <p>My Google Summer of Code proposal was accepted by the TensorFlow team, and I was paired with a mentor to integrate Random Network Distillation to TF-Agents, TensorFlow's reinforcement learning library.</p>
+            <p>
+              My Google Summer of Code proposal was accepted by the TensorFlow team in Summer 2019 and 2020.
+              In 2019, I worked on <a href="https://github.com/tensorflow/agents">TF-Agents</a>, TensorFlow's reinforcement learning library.
+              In 2020, I worked on <a href="https://github.com/tensorflow/swift-models">Swift for TensorFlow</a>.
+            </p>
             <ul>
-              <li>Implemented Random Network Distillation, a state-of-the-art bonus-based exploration reinforcement learning algorithm</li>
-              <li>Improved the documentation for Proximal Policy Optimization, a popular baseline reinforcement learning algorithm</li>
+              <li>Implemented and documented popular reinforcement learning algorithms (DQN, PPO) using Swift for TensorFlow</li>
+              <li>Prototyped Random Network Distillation, a bonus-based exploration reinforcement learning algorithm</li>
             </ul>
             <div class="tags">
               <span class="tag">TensorFlow</span>
               <span class="tag">TensorBoard</span>
               <span class="tag">Python</span>
               <span class="tag">Google Cloud Platform</span>
+              <span class="tag">Swift for TensorFlow</span>
             </div>
           </div>
         </div>
@@ -232,9 +319,8 @@
           <div class="content">
             <p>I founded Scratchwork with 3 co-founders offering a whiteboard app customized for communication between researchers.</p>
             <ul>
-              <li>Designed and built the main dashboard page allowing users to create, edit, or delete boards</li>
-              <li>Implemented login and integrated it with Google OAuth with Passport.js</li>
-              <li>Accepted to and participated in the 2017 Princeton eLab Summer Accelerator</li>
+              <li>Designed and built the main dashboard page allowing users to create, edit, or delete whiteboards</li>
+              <li>Implemented login with Google OAuth integration using Passport.js</li>
             </ul>
             <div class="tags">
               <span class="tag">JavaScript</span>
@@ -242,38 +328,6 @@
               <span class="tag">ExpressJS</span>
               <span class="tag">NodeJS</span>
               <span class="tag">ESLint</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image centered-image is-48x48">
-                <img src="img/princeton.png" alt="Princeton Logo">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">ReMatch Summer Undergraduate Research Program</p>
-              <p class="subtitle is-6">Undergraduate Researcher
-                -
-                <time datetime="2018-1">June 2017</time>
-                -
-                <time datetime="2019-9">September 2018</time>
-              </p>
-            </div>
-          </div>
-          <div class="content">
-            <p>I conducted math research with Matthew de Courcy-Ireland and published our research to <a href="https://www.tandfonline.com/doi/abs/10.1080/10586458.2019.1702123">Experimental Mathematics</a>.</p>
-            <ul>
-              <li>Analyzed graph structures and spectral patterns of Markoff graphs with four million vertices and six million edges</li>
-              <li>Proved a deterministic formula for the number of orbits of any Markoff graph in a prime field</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">C++</span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">Python</span>
             </div>
           </div>
         </div>
@@ -362,7 +416,7 @@
         <div class="tile is-vertical is-12">
           <div class="tile">
             <div class="tile is-parent">
-              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/osim-rl-helper'">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/MagNet'">
                 <div class="card-content">
                     <div class="media">
                       <div class="media-left">
@@ -371,20 +425,21 @@
                         </figure>
                       </div>
                       <div class="media-content">
-                        <p class="title is-4">seungjaeryanlee/osim-rl-helper</p>
-                        <p class="subtitle is-6">Helper for NIPS 2018: AI for Prosthetics Challenge</p>
+                        <p class="title is-4">seungjaeryanlee/MagNet</p>
+                        <p class="subtitle is-6">Database for predicting magnetic core loss with neural networks trained with AutoML</p>
                       </div>
                     </div>
                   <div class="tags is-6">
-                    <span class="tag">python</span>
                     <span class="tag">machine-learning</span>
-                    <span class="tag">reinforcement-learning</span>
+                    <span class="tag">modeling</span>
+                    <span class="tag">magnetics</span>
+                    <span class="tag">dataset</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tile is-parent">
-              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/rldb'">
+              <div class="tile is-child custom-tile card" onclick="location.href='https:\/\/github.com/seungjaeryanlee/retro-agents'">
                 <div class="card-content">
                     <div class="media">
                       <div class="media-left">
@@ -393,15 +448,13 @@
                         </figure>
                       </div>
                       <div class="media-content">
-                        <p class="title is-4">seungjaeryanlee/rldb</p>
-                        <p class="subtitle is-6">Performances of Reinforcement Learning Agents</p>
+                        <p class="title is-4">seungjaeryanlee/retro-agents</p>
+                        <p class="subtitle is-6">Reinforcement learning agents trained on <i>Sonic the Hedgehog</i></p>
                       </div>
                     </div>
                   <div class="tags is-6">
                     <span class="tag">python</span>
                     <span class="tag">reinforcement-learning</span>
-                    <span class="tag">state-of-the-art</span>
-                    <span class="tag">database</span>
                   </div>
                 </div>
               </div>
